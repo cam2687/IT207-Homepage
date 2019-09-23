@@ -1,0 +1,106 @@
+<!--Christian Medrano-->
+body{
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 120px 600px 50px;
+    grid-template-areas: "aside header"
+                         "aside content"
+                         "aside footer";
+}
+p,li, a{
+    font-family: 'Courier New', Courier, monospace;
+} 
+
+
+
+img{
+    width: 350px;
+    height: 245px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.aside{
+    padding: 15px;
+    border-right-style: solid;
+    border-right-width: 5px;
+    border-color: white;
+    background-color: beige;
+    grid-area: aside;
+}
+
+.header{
+    text-align: center;
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    border-color: white;
+    grid-area: header;
+    display: grid;
+    grid-template: 50% 50%;
+    grid-template-areas: "c1 c2";
+}
+
+.column1{
+    background-color: aqua;
+    grid-area: c1;
+}
+
+.column2{
+    border-left-width: 5px;
+    border-color: white;
+    border-left-style: solid;
+    background-color: aqua;
+    grid-area: c2;
+}
+.content{
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "photo details"
+                         "summary details";
+}
+.photo{
+    background-color: powderblue;
+    grid-area: photo;
+    padding: 10px;
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    border-color: white;
+}
+
+.details{
+    border-left-style: solid;
+    border-left-width: 5px;
+    border-color: white;
+    padding: 15px;
+    background-color: pink;
+    grid-area: details;
+}
+
+.summary{
+    padding: 15px;
+    background-color: aquamarine;
+    grid-area: summary;
+}
+
+.footer{
+    border-color: white;
+    border-top-width: 5px;
+    border-top-style: solid;
+    background-color: lightseagreen;
+    text-align: center;
+    grid-area: footer;
+    font-size: small;
+}
+.bld{
+    font-weight: bold;
+}
+
